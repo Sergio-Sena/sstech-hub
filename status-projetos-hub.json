@@ -1,0 +1,40 @@
+{
+  "timestamp": "2025-12-23T18:29:52.061227",
+  "resultados": {
+    "Portfolio": {
+      "status": 200,
+      "online": true,
+      "url": "https://dev-cloud.sstechnologies-cloud.com"
+    },
+    "AWS Services": {
+      "status": 200,
+      "online": true,
+      "url": "https://aws-services.sstechnologies-cloud.com"
+    },
+    "Finanças": {
+      "status": 200,
+      "online": true,
+      "url": "https://financaspessoais.sstechnologies-cloud.com"
+    },
+    "Mídiaflow": {
+      "status": 200,
+      "online": true,
+      "url": "https://midiaflow.sstechnologies-cloud.com"
+    },
+    "Ritech": {
+      "status": "connection_error",
+      "online": false,
+      "url": "https://ritech-fechaduras.sstechnologies-cloud.com"
+    },
+    "Gestão Tráfego": {
+      "status": "connection_error",
+      "online": false,
+      "url": "https://ssgestaodetrafego.sstechnologies-cloud.com"
+    },
+    "AWS Dashboard": {
+      "status": "connection_error",
+      "online": false,
+      "url": "https://aws-dashboard.sstechnologies-cloud.com"
+    }
+  }
+}

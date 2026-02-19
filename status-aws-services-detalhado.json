@@ -1,0 +1,33 @@
+{
+  "timestamp": "2025-12-23T18:39:57.723492",
+  "resultados": {
+    "Frontend": {
+      "status": 200,
+      "funcionando": true,
+      "url": "https://aws-services.sstechnologies-cloud.com",
+      "content_type": "text/html",
+      "content_length": 4493
+    },
+    "API Health": {
+      "status": 403,
+      "funcionando": false,
+      "url": "https://aws-services.sstechnologies-cloud.com/api/health",
+      "content_type": "application/xml",
+      "content_length": 111
+    },
+    "Services Page": {
+      "status": 403,
+      "funcionando": false,
+      "url": "https://aws-services.sstechnologies-cloud.com/services",
+      "content_type": "application/xml",
+      "content_length": 111
+    },
+    "Dashboard": {
+      "status": 403,
+      "funcionando": false,
+      "url": "https://aws-services.sstechnologies-cloud.com/dashboard",
+      "content_type": "application/xml",
+      "content_length": 111
+    }
+  }
+}

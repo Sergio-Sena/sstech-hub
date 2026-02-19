@@ -1,0 +1,39 @@
+{
+    "Quantity": 2,
+    "Items": [
+        {
+            "Id": "S3-hub-origin",
+            "DomainName": "hub.sstechnologies-cloud.com.s3.us-east-1.amazonaws.com",
+            "OriginPath": "",
+            "CustomHeaders": {
+                "Quantity": 0
+            },
+            "S3OriginConfig": {
+                "OriginAccessIdentity": ""
+            },
+            "ConnectionAttempts": 3,
+            "ConnectionTimeout": 10,
+            "OriginShield": {
+                "Enabled": false
+            },
+            "OriginAccessControlId": "ERVUC4UHQ06MA"
+        },
+        {
+            "Id": "S3-portfolio-origin",
+            "DomainName": "portfolio-sergio-sena.s3.us-east-1.amazonaws.com",
+            "OriginPath": "",
+            "CustomHeaders": {
+                "Quantity": 0
+            },
+            "S3OriginConfig": {
+                "OriginAccessIdentity": ""
+            },
+            "ConnectionAttempts": 3,
+            "ConnectionTimeout": 10,
+            "OriginShield": {
+                "Enabled": false
+            },
+            "OriginAccessControlId": "ERVUC4UHQ06MA"
+        }
+    ]
+}

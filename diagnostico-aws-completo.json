@@ -1,0 +1,96 @@
+{
+  "timestamp": "2025-12-23T13:42:22.806437",
+  "s3_buckets": [
+    {
+      "nome": "financaspessoais.sstechnologies-cloud.com",
+      "tem_policy": true,
+      "tem_website": true
+    },
+    {
+      "nome": "hub.sstechnologies-cloud.com",
+      "tem_policy": true,
+      "tem_website": false
+    }
+  ],
+  "cloudfront_distributions": [
+    {
+      "id": "E23SOSSVGQ2NOD",
+      "alias": "dev-cloud.sstechnologies-cloud.com",
+      "status": "Deployed",
+      "origin": "portfolio-sergio-sena.s3.us-east-1.amazonaws.com"
+    },
+    {
+      "id": "E1U10Q11WGDP01",
+      "alias": "aws-services.sstechnologies-cloud.com",
+      "status": "Deployed",
+      "origin": "aws-services-dashboard-prod.s3.us-east-1.amazonaws.com"
+    },
+    {
+      "id": "E2PT7P40RJBK38",
+      "alias": "ritech-fechaduras-digitais.sstechnologies-cloud.com",
+      "status": "Deployed",
+      "origin": "ritech-fechaduras-site.s3.us-east-1.amazonaws.com"
+    },
+    {
+      "id": "E32SZD5BCOGZDM",
+      "alias": "sstrafegopago.sstechnologies-cloud.com",
+      "status": "Deployed",
+      "origin": "ssgestaodetrafego.s3.us-east-1.amazonaws.com"
+    },
+    {
+      "id": "EW17MMXFBIMW6",
+      "alias": "aws-certification-platform.sstechnologies-cloud.com",
+      "status": "Deployed",
+      "origin": "aws-cert-platform-2025.s3.us-east-1.amazonaws.com"
+    },
+    {
+      "id": "E2HZKZ9ZJK18IU",
+      "alias": "midiaflow.sstechnologies-cloud.com",
+      "status": "Deployed",
+      "origin": "gdb962d234.execute-api.us-east-1.amazonaws.com"
+    },
+    {
+      "id": "E233IHQWZDF2M2",
+      "alias": "financaspessoais.sstechnologies-cloud.com",
+      "status": "Deployed",
+      "origin": "financaspessoais.sstechnologies-cloud.com.s3-website-us-east-1.amazonaws.com"
+    },
+    {
+      "id": "E1R9CQH6OLDP6F",
+      "alias": "kate-kuray-profile.sstechnologies-cloud.com",
+      "status": "Deployed",
+      "origin": "kate-kuray-portfolio-20241220.s3.amazonaws.com"
+    },
+    {
+      "id": "E20VPG27E02V7M",
+      "alias": "hub.sstechnologies-cloud.com",
+      "status": "Deployed",
+      "origin": "portfolio-sergio-sena.s3.us-east-1.amazonaws.com"
+    },
+    {
+      "id": "E9ZQJ3RPSA04N",
+      "alias": "v2-portfolio.sstechnologies-cloud.com",
+      "status": "Deployed",
+      "origin": "mediaflow-frontend-969430605054.s3-website-us-east-1.amazonaws.com"
+    },
+    {
+      "id": "E9ZQJ3RPSA04N",
+      "alias": "v2-aws-services.sstechnologies-cloud.com",
+      "status": "Deployed",
+      "origin": "mediaflow-frontend-969430605054.s3-website-us-east-1.amazonaws.com"
+    },
+    {
+      "id": "E9ZQJ3RPSA04N",
+      "alias": "v2-hub.sstechnologies-cloud.com",
+      "status": "Deployed",
+      "origin": "mediaflow-frontend-969430605054.s3-website-us-east-1.amazonaws.com"
+    }
+  ],
+  "route53_zones": [
+    {
+      "nome": "sstechnologies-cloud.com.",
+      "id": "/hostedzone/Z07937031ROGP6XAEMPWJ"
+    }
+  ],
+  "problemas": []
+}

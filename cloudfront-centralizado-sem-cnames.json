@@ -1,0 +1,101 @@
+{
+  "CallerReference": "sstech-multidominio-test-2025-01-15",
+  "DefaultRootObject": "index.html",
+  "Comment": "SStech Hub - CloudFront Centralizado TESTE (sem CNAMEs)",
+  "Enabled": true,
+  "Origins": {
+    "Quantity": 6,
+    "Items": [
+      {
+        "Id": "hub-origin",
+        "DomainName": "hub.sstechnologies-cloud.com.s3.us-east-1.amazonaws.com",
+        "OriginAccessControlId": "ERVUC4UHQ06MA",
+        "S3OriginConfig": {
+          "OriginAccessIdentity": ""
+        }
+      },
+      {
+        "Id": "portfolio-origin",
+        "DomainName": "portfolio-sergio-sena.s3.us-east-1.amazonaws.com",
+        "OriginAccessControlId": "ERVUC4UHQ06MA",
+        "S3OriginConfig": {
+          "OriginAccessIdentity": ""
+        }
+      },
+      {
+        "Id": "aws-services-origin",
+        "DomainName": "aws-services-dashboard-prod.s3.us-east-1.amazonaws.com",
+        "OriginAccessControlId": "ERVUC4UHQ06MA",
+        "S3OriginConfig": {
+          "OriginAccessIdentity": ""
+        }
+      },
+      {
+        "Id": "ritech-origin",
+        "DomainName": "ritech-fechaduras-site.s3.us-east-1.amazonaws.com",
+        "OriginAccessControlId": "ERVUC4UHQ06MA",
+        "S3OriginConfig": {
+          "OriginAccessIdentity": ""
+        }
+      },
+      {
+        "Id": "trafego-origin",
+        "DomainName": "ssgestaodetrafego.s3.us-east-1.amazonaws.com",
+        "OriginAccessControlId": "ERVUC4UHQ06MA",
+        "S3OriginConfig": {
+          "OriginAccessIdentity": ""
+        }
+      },
+      {
+        "Id": "midiaflow-origin",
+        "DomainName": "mediaflow-frontend-969430605054.s3-website-us-east-1.amazonaws.com",
+        "CustomOriginConfig": {
+          "HTTPPort": 80,
+          "HTTPSPort": 443,
+          "OriginProtocolPolicy": "http-only",
+          "OriginSslProtocols": {
+            "Quantity": 3,
+            "Items": ["TLSv1", "TLSv1.1", "TLSv1.2"]
+          }
+        }
+      }
+    ]
+  },
+  "DefaultCacheBehavior": {
+    "TargetOriginId": "hub-origin",
+    "ViewerProtocolPolicy": "redirect-to-https",
+    "MinTTL": 0,
+    "DefaultTTL": 86400,
+    "MaxTTL": 31536000,
+    "ForwardedValues": {
+      "QueryString": false,
+      "Cookies": {
+        "Forward": "none"
+      },
+      "Headers": {
+        "Quantity": 1,
+        "Items": ["Host"]
+      }
+    },
+    "TrustedSigners": {
+      "Enabled": false,
+      "Quantity": 0
+    },
+    "Compress": true
+  },
+  "CustomErrorResponses": {
+    "Quantity": 1,
+    "Items": [
+      {
+        "ErrorCode": 404,
+        "ResponsePagePath": "/index.html",
+        "ResponseCode": "200",
+        "ErrorCachingMinTTL": 300
+      }
+    ]
+  },
+  "ViewerCertificate": {
+    "CloudFrontDefaultCertificate": true
+  },
+  "PriceClass": "PriceClass_100"
+}
